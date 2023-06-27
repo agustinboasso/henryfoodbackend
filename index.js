@@ -28,3 +28,4 @@ conn.sync({ alter: true }).then(() => { //alter:true para que guarde la info for
     console.log(`%s listening at ${port}`); // eslint-disable-line no-console
   });
 });
+//database drop

@@ -1,7 +1,9 @@
 const { Diet } = require("../db");
 const axios = require("axios");
 require("dotenv").config();
-const { API_KEY } = process.env;
+const { API_KEYI,API_KEYII,API_KEYIII, API_KEYIV, API_KEYV } = process.env;
+
+const API_KEY = API_KEYI || API_KEYII || API_KEYIII || API_KEYIV || API_KEYV;
 
 const cleanArray = (arr) => arr.map((e) =>{
     return {
